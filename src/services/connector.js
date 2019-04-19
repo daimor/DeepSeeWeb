@@ -287,6 +287,7 @@
          * Loads main configuration from server
          */
         function loadMainConfig() {
+            NAMESPACE = getNamespace();
             return $http({
                 method: 'Get',
                 data: {},
